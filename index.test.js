@@ -5,7 +5,6 @@ describe("forEach", () => {
     const numbers = [1, 2, 3]
     const fakeFunction = jest.fn()
     forEach(numbers, fakeFunction)
-    console.log(fakeFunction.mock)
 
     expect(fakeFunction).toHaveBeenNthCalledWith(1, 1)
     expect(fakeFunction).toHaveBeenNthCalledWith(2, 2)
